@@ -1,0 +1,9 @@
+#두 개 뽑아서 더하기
+
+def solution(numbers):
+    answer = []
+    for num in range(len(numbers)):
+        for x in range(num+1,len(numbers)):
+            answer.append(numbers[num]+numbers[x])
+    return sorted(set(answer))
+    
