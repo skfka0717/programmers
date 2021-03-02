@@ -1,0 +1,11 @@
+#전호번호 목록(이전)
+
+def solution(phone_book):
+    phone_book = sorted(phone_book)
+    for a in phone_book:
+        case = phone_book
+        case.remove(a)
+        for c in case:
+            if c.startswith(a):
+                return False
+    return True
