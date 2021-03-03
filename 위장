@@ -1,0 +1,14 @@
+#위장(이전)
+
+def solution(clothes):
+    a_case = []
+    answer = []
+    sum = 1
+    for i in clothes:
+        a_case.append(i[1])
+    b_case = set(a_case)
+    for b in b_case:
+        answer.append(a_case.count(b)+1)
+    for x in answer:
+        sum *= x
+    return sum-1
