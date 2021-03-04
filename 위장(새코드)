@@ -1,0 +1,10 @@
+https://programmers.co.kr/learn/courses/30/lessons/42578
+
+def solution(clothes):
+    answer = 1
+    case=[]
+    for i in clothes:
+        case.append(i[1])
+    for j in set(case):
+        answer *= (case.count(j)+1)
+    return (answer-1)
