@@ -1,0 +1,13 @@
+https://programmers.co.kr/learn/courses/30/lessons/12917
+
+def solution(s):
+    answer = ''
+    ANSWER = ''
+    for i in s:
+        if i.isupper():
+            ANSWER += i
+        else:
+            answer += i
+    answer = "".join(sorted(answer, reverse=True))
+    ANSWER = "".join(sorted(ANSWER, reverse=True))
+    return answer+ANSWER
