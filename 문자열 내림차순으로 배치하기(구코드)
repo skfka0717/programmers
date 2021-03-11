@@ -1,0 +1,16 @@
+https://programmers.co.kr/learn/courses/30/lessons/12917
+
+def solution(s):
+    answer = ''
+    a_string = ''
+    A_string = ''
+    for a in s:
+        if a.isupper():
+            A_string += a
+        else:
+            a_string += a
+    A_string = ''.join(sorted(A_string, reverse = True))
+    a_string = ''.join(sorted(a_string, reverse = True))
+    answer = a_string + A_string
+
+    return answer
