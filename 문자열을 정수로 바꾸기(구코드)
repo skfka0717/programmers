@@ -1,0 +1,8 @@
+https://programmers.co.kr/learn/courses/30/lessons/12925
+
+def solution(s):
+    if s[0].isdigit() or s[0] == '+':
+        answer = int(s)
+    if s[0] == '-':
+        answer = -int(s[1:])
+    return answer
