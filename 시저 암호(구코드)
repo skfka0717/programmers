@@ -1,0 +1,25 @@
+https://programmers.co.kr/learn/courses/30/lessons/12926
+
+def solution(s, n):
+    answer = ''
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    for aaa in s:
+        if aaa.isalpha():
+            if aaa.isupper():
+                position = ALPHA.index(aaa)
+                if position+n > 25:
+                    position -= 26
+                    answer += ALPHA[position+n]
+                else:
+                    answer += ALPHA[position+n]
+            if aaa.islower():
+                position = alpha.index(aaa)
+                if position+n > 25:
+                    position -= 26
+                    answer += alpha[position+n]
+                else:
+                    answer += alpha[position+n]
+        else:
+            answer += aaa
+    return answer
