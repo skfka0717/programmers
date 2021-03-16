@@ -1,0 +1,16 @@
+https://programmers.co.kr/learn/courses/30/lessons/12926
+
+def solution(s, n):
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    answer = ''
+    for i in s:
+        if i.isupper():
+            NUM = (ALPHA.index(i)+n)%26
+            answer += ALPHA[NUM]
+        elif i.islower():
+            num = (alpha.index(i)+n)%26
+            answer += alpha[num]
+        else:
+            answer += i
+    return answer
