@@ -1,0 +1,14 @@
+https://programmers.co.kr/learn/courses/30/lessons/12930
+
+def solution(s):
+    case = s.split(" ")
+    box = []
+    for c in case:
+        string = ''
+        for a in range(len(c)):
+            if a % 2 == 0:
+                string += c[a].upper()
+            else:
+                string += c[a].lower()
+        box.append(string)
+    return " ".join(box)
