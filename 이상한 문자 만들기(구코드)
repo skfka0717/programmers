@@ -1,0 +1,14 @@
+https://programmers.co.kr/learn/courses/30/lessons/12930
+
+def solution(s):
+    string = s.split(' ')
+    answer = []
+    for s in string:
+        word = []
+        for a in range(len(s)):
+            if a % 2 == 0:
+                word.append(s[a].upper())
+            else:
+                word.append(s[a].lower())
+        answer.append(''.join(word))
+    return  ' '.join(answer)
