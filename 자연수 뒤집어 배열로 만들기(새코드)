@@ -1,0 +1,10 @@
+https://programmers.co.kr/learn/courses/30/lessons/12932
+
+def solution(n):
+    case = []
+    answer = []
+    for i in str(n):
+        case.append(int(i))
+    for i in case[::-1]:
+        answer.append(i)
+    return  answer
