@@ -1,0 +1,10 @@
+https://programmers.co.kr/learn/challenges
+
+def solution(x):
+    sum = 0
+    for z in str(x):
+        sum += int(z)
+    if x % sum == 0:
+        return True
+    else:
+        return False
