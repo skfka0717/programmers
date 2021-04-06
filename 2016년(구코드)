@@ -1,0 +1,11 @@
+https://programmers.co.kr/learn/courses/30/lessons/12901
+
+def solution(a, b):
+    month = [31,29,31,30,31,30,31,31,30,31,30,31]
+    all_day = []
+    for i in range(1,13):
+        for j in range(1, month[i-1]+1):
+            all_day.append(f'{i}'+'/'+f'{j}')
+    find_day = all_day.index(f'{a}'+'/'+f'{b}')
+    answer = ['FRI','SAT','SUN','MON','TUE','WED','THU']
+    return answer[find_day % 7]
