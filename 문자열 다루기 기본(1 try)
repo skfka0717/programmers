@@ -1,0 +1,8 @@
+https://programmers.co.kr/learn/courses/30/lessons/12918
+
+def solution(s):
+    for i in s:
+        if i.isalpha():
+            return False
+            break
+    return True
