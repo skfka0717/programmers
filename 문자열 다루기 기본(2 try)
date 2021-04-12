@@ -1,0 +1,10 @@
+https://programmers.co.kr/learn/courses/30/lessons/12918
+
+def solution(s):
+    try:
+        if int(s):
+            return True
+        else:
+            raise exception
+    except:
+        return False
